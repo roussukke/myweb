@@ -20,7 +20,7 @@
             <div class="col">
                 <form method="post" action="">
                     <fieldset>
-                        <legend>('Welcome to the Game CP please login with your game info')</legend>
+                        <legend>('please login with your account info')</legend>
                         <div class="form-group">
                             <label for="username">Username</label>
                             <input name="username" type="text" class="form-control" id="username"
@@ -41,47 +41,6 @@
         </div>
     </div>
     <!-- end login-->
-    <!-- register -->
-    <div class="container-fluid mt-3">
-        <div class="row">
-            <div class="col">
-                <form method="post" action="?action=verify&confirm_key=' . $confirm_key . '">
-                    <fieldset>
-                        <legend>Confirm</legend>
-                        <div class="form-group">
-                            <label>confirm_key:</label>
-                            <input type="text" class="form-control" disabled="disabled" value="' . $confirm_key . '">
-                            <p class="help-block">This is the confirmation key sent to your e-mail</p>
-                        </div>
-                        <div class="form-group">
-                            <label>confirm_user:</label>
-                            <input type="text" class="form-control" name="username" maxlength="16"
-                                value="' . $username . '">
-                            <p class="help-block">Enter the username you choose at registration</p>
-                        </div>
-                    </fieldset>
-                    <legend>Choose a password</legend>
-                    <div class="form-group">
-                        <label>password:</label>
-                        <input type="password" class="form-control" name="password" maxlength="24" value="">
-                        <p class="help-block">Pick a valid password between %d and %d characters. Alphanumeric only.</p>
-                    </div>
-                    <div class="form-group">
-                        <label>confirm_password:</label>
-                        <input type="password" class="form-control" name="confirm_password" maxlength="24" value="">
-                        <p class="help-block">Re-type your Password:</p>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary" name="confirm">Confirm Account</button>
-                    </div>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- end register -->
-
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
