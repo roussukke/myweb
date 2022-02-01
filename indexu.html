@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="include/templates/css/bootstrap.css">
+    <link rel="stylesheet" href="include/templates/css/see.css">
+    <script src="https://kit.fontawesome.com/759b16292f.js" crossorigin="anonymous"></script>
+    <script src="include/templates/js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+    <div id="main">
+        <!-- navbar -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-black bg-transparent text-reset">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsatu"
+                    aria-controls="navbarsatu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-uppercase" id="navbarsatu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">RULES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropsatu" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                DOWNLOAD
+                            </a>
+                            <div class="dropdown-menu text-capitalize" aria-labelledby="dropsatu">
+                                <a class="dropdown-item" href="#">full client</a>
+                                <a class="dropdown-item" href="#">patch client</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdua" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                INFORMATION
+                            </a>
+                            <div class="dropdown-menu text-capitalize bg-transparent" aria-labelledby="dropdua">
+                                <a class="dropdown-item" href="#">guide</a>
+                                <a class="dropdown-item" href="#">server rate</a>
+                                <a class="dropdown-item" href="#">combine guide</a>
+                                <a class="dropdown-item" href="#">daily quest</a>
+                                <a class="dropdown-item" href="#">box info</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="droptiga" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                DONATION
+                            </a>
+                            <div class="dropdown-menu text-capitalize" aria-labelledby="droptiga">
+                                <a class="dropdown-item" href="#">donation list</a>
+                                <a class="dropdown-item" href="#">ho to donation</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT US!</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <a class="nav-item nav-link" href="#">Login</a>
+                        <a class="nav-item nav-link" href="#">Register</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- end navbar -->
+        <!-- contens-->
+        <div class="container text-monospace mt-3">
+            <div class="row">
+                <!-- conten tengah -->
+                <div class="col-sm-8">
+                    <!-- gambar -->
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-fluid" src="include/templates/img/item4.png" alt="item4.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="include/templates/img/item5.png" alt="item5.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="include/templates/img/item3.png" alt="item3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end gambar -->
+                    <!-- tab konten -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true"><i class="fas fa-business-time"></i> NEWS</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false"><i class="fas fa-cloud-moon"></i>
+                                EVENTS</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button"
+                                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Collapsible Group Item <span class=" float-right"><i
+                                                        class="fas fa-angle-down"></i></span>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Some placeholder content for the first accordion panel. This panel is shown
+                                            by default, thanks to the <code>.show</code> class.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Collapsible Group Item <span class="float-right"><i
+                                                        class="fas fa-angle-down"></i></span>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Some placeholder content for the second accordion panel. This panel is
+                                            hidden by default.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <h4>profil</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet provident
+                                praesentium porro nam? Sunt consequatur, cupiditate non nisi labore natus repellat cum
+                                pariatur aspernatur, voluptatibus accusamus explicabo voluptates repudiandae!
+                                Animi rerum quisquam et nisi, minus pariatur reiciendis assumenda necessitatibus sit
+                                magnam voluptates voluptate quas sed facilis dolores molestiae accusamus tempora a
+                                itaque dicta voluptatum inventore eligendi aspernatur! Officiis, corporis.
+                                Natus cum illo neque eius doloribus nihil adipisci tempora non quo ex inventore labore
+                                minus corrupti dicta id, voluptatibus minima perspiciatis explicabo dolor distinctio in?
+                                Vitae similique laborum sequi explicabo.</p>
+                            <a href="">profil</a>
+                        </div>
+                    </div>
+                    <!-- end tab konten -->
+
+                </div>
+                <!-- end konten tengah -->
+                <!-- konten kanan -->
+                <div class="col-sm-4">
+                    <div class="card-body">
+                        <div class="card-header text-center">
+                            SERVER STATUS
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                LOGIN<span class="float-right">SERVER</span>
+                            </li>
+                            <li class="list-group-item">
+                                TOTAL ONLINE<span class="float-right">0 USER</span>
+                            </li>
+                        </ul>
+                        <div class="card-header text-center">
+                            CHIP WAR STATUS
+                        </div>
+                        <div class="progress mt-3 clearfix">
+                            <img src="include/templates/img/ras/Accretia.gif" alt="">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">100%</div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <p>WINNER<span class="float-right">(ras)</span></p>
+                                <p>CHIP BREAKER<span class="float-right">(nick)</span></p>
+                            </li>
+                        </ul>
+                        <div class="card-header text-center">
+                            TOP 15 KILLER
+                        </div>
+                        <table class="table table-sm mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nickname</th>
+                                    <th scope="col">Kill</th>
+                                    <th scope="col">Death</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>none</td>
+                                    <td>none</td>
+                                    <td>none</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- end konten kanan -->
+            </div>
+        </div>
+        <!-- end contens-->
+    </div>
+
+
+
+
+
+    <script src="include/templates/js/bootstrap.bundle.js"></script>
+    <script src="include/templates/js/lain.js"></script>
+</body>
+
+</html>
