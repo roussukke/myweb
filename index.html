@@ -18,7 +18,7 @@
 
 
 
-    <div id="main">
+    <div id="container-fluid">
         <!-- navbar -->
         <div class="container">
             <ul class="nav justify-content-center">
@@ -74,13 +74,14 @@
             </ul>
         </div>
         <!-- end navbar -->
-        <!-- contens-->
-        <div class="container text-monospace mt-3">
+        <!-- container contens-->
+        <div class="container mt-3">
+            <!-- row-->
             <div class="row">
-                <!-- conten tengah -->
-                <div class="col-sm-8">
+                <!-- col tengah -->
+                <div class="col-md-8 kiri">
                     <!-- gambar -->
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide mt-3" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img class="img-fluid" src="include/templates/img/item4.png" alt="item4.png">
@@ -97,143 +98,216 @@
                     <!-- tab konten -->
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                aria-controls="home" aria-selected="true"><i class="fas fa-business-time"></i> NEWS</a>
+                            <a class="nav-link active" id="newsPg-tab" data-toggle="tab" href="#newsPg" role="tab"
+                                aria-controls="newsPg" aria-selected="true"><i class="fas fa-business-time"></i>
+                                NEWS</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false"><i class="fas fa-cloud-moon"></i>
+                            <a class="nav-link" id="eventsPg-tab" data-toggle="tab" href="#eventsPg" role="tab"
+                                aria-controls="eventsPg" aria-selected="false"><i class="fas fa-cloud-moon"></i>
                                 EVENTS</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade show active" id="newsPg" role="tabpanel" aria-labelledby="newsPg-tab">
                             <div class="accordion" id="accordionExample">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left" type="button"
-                                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                                aria-controls="collapseOne">
-                                                Collapsible Group Item <span class=" float-right"><i
-                                                        class="fas fa-angle-down"></i></span>
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Some placeholder content for the first accordion panel. This panel is shown
-                                            by default, thanks to the <code>.show</code> class.
-                                        </div>
+                                <div class="card" id="headingOne">
+                                    <h2 class="mb-0 bgx">
+                                        <button class="btn btn-outline-dark btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <i>News 1</i>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card card-body bg-transparent">
+                                        <p>news 1 belum di garap</p>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo">
-                                                Collapsible Group Item <span class="float-right"><i
-                                                        class="fas fa-angle-down"></i></span>
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Some placeholder content for the second accordion panel. This panel is
-                                            hidden by default.
-                                        </div>
+                                <div class="card" id="headingTwo">
+                                    <h2 class="mb-0 bgx">
+                                        <button class="btn btn-outline-dark btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <i>News 2</i>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card card-body bg-transparent">
+                                        <p>news 2 blom di garap</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <h4>profil</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet provident
-                                praesentium porro nam? Sunt consequatur, cupiditate non nisi labore natus repellat cum
-                                pariatur aspernatur, voluptatibus accusamus explicabo voluptates repudiandae!
-                                Animi rerum quisquam et nisi, minus pariatur reiciendis assumenda necessitatibus sit
-                                magnam voluptates voluptate quas sed facilis dolores molestiae accusamus tempora a
-                                itaque dicta voluptatum inventore eligendi aspernatur! Officiis, corporis.
-                                Natus cum illo neque eius doloribus nihil adipisci tempora non quo ex inventore labore
-                                minus corrupti dicta id, voluptatibus minima perspiciatis explicabo dolor distinctio in?
-                                Vitae similique laborum sequi explicabo.</p>
-                            <a href="">profil</a>
+                        <div class="tab-pane txx fade" id="eventsPg" role="tabpanel" aria-labelledby="eventsPg-tab">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card" id="headingThree">
+                                    <h2 class="mb-0 bgx">
+                                        <button class="btn btn-outline-dark btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <i>Event 1</i>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body bg-transparent txx">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- end tab konten -->
 
                 </div>
-                <!-- end konten tengah -->
-                <!-- konten kanan -->
-                <div class="col-sm-4">
-                    <div class="card-body">
-                        <div class="card-header text-center">
-                            SERVER STATUS
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                LOGIN<span class="float-right">SERVER</span>
-                            </li>
-                            <li class="list-group-item">
-                                TOTAL ONLINE<span class="float-right">0 USER</span>
-                            </li>
-                        </ul>
-                        <div class="card-header text-center">
-                            CHIP WAR STATUS
-                        </div>
-                        <div class="progress mt-3 clearfix">
-                            <img src="include/templates/img/ras/Accretia.gif" alt="">
-                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">25%</div>
-                        </div>
-                        <div class="progress mt-2">
-                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
-                                aria-valuemin="0" aria-valuemax="100">50%</div>
-                        </div>
-                        <div class="progress mt-2">
-                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
-                                aria-valuemin="0" aria-valuemax="100">100%</div>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <p>WINNER<span class="float-right">(ras)</span></p>
-                                <p>CHIP BREAKER<span class="float-right">(nick)</span></p>
-                            </li>
-                        </ul>
-                        <div class="card-header text-center">
-                            TOP 15 KILLER
-                        </div>
-                        <table class="table table-sm mt-3">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Nickname</th>
-                                    <th scope="col">Kill</th>
-                                    <th scope="col">Death</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>none</td>
-                                    <td>none</td>
-                                    <td>none</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <!-- end col tengah -->
+
+                <!-- col kanan -->
+                <div class="col-md-4 fnx kanan">
+                    <!-- jam-->
+                    <div class="text-center mt-3">
+                        <p>tempat jam</p>
                     </div>
+                    <!-- end jam -->
+
+                    <!--server status-->
+                    <table class="table table-sm table-borderless">
+                        <tr>
+                            <p class="text-center rounded-lg bgx">server status</p>
+                        </tr>
+                        <tr>
+                            <td>login</td>
+                            <td>server</td>
+                        </tr>
+                        <tr>
+                            <td>total online</td>
+                            <td>0 user</td>
+                        </tr>
+                    </table>
+                    <!-- end server status -->
+
+                    <!-- chip war -->
+                    <table class="table table-sm table-borderless">
+                        <tr>
+                            <p class="text-center rounded-lg bgx">chip war status</p>
+                        </tr>
+                        <tr>
+                            <td width="10px">
+                                <img src="include/templates/img/ras/Accretia.gif" alt="Accretia">
+                            </td>
+                            <td>
+                                <div class="progress mt-1">
+                                    <div class="progress-bar bgx" role="progressbar" style="width: 25%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10px">
+                                <img src="include/templates/img/ras/Bellato.gif" alt="Bellato">
+                            </td>
+                            <td>
+                                <div class="progress mt-1">
+                                    <div class="progress-bar bgx" role="progressbar" style="width: 50%;"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10px">
+                                <img src="include/templates/img/ras/Cora.gif" alt="Cora">
+                            </td>
+                            <td>
+                                <div class="progress mt-1">
+                                    <div class="progress-bar bgx" role="progressbar" style="width: 100%;"
+                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                </div>
+                            </td>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- end chip war -->
+
+                    <!-- chip war ststus -->
+                    <table class="table table-sm table-borderless">
+                        <tr>
+                            <td>winner</td>
+                            <td>
+                                <i>Accertia <img src="include/templates/img/ras/Accretia.gif" alt="Accretia"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Chip breaker</td>
+                            <td>shinchan</td>
+                        </tr>
+                    </table>
+                    <!-- end chip war status -->
+
+                    <!-- top 15 kill -->
+                    <table class="table table-sm table-borderless">
+                        <tr>
+                            <p class="text-center rounded-lg bgx">top 15 killer</p>
+                        </tr>
+                        <tr>
+                            <td width="10px">#</td>
+                            <td>nick</td>
+                            <td width="10px">kills</td>
+                            <td width="10px">dieth</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><i>shinchan<img src="include/templates/img/ras/Accretia.gif" alt="Accretia"></i></td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><i>preAmp<img src="include/templates/img/ras/Cora.gif" alt="Cora"></i></td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                    <!-- end top 15 kill -->
 
                 </div>
-                <!-- end konten kanan -->
+                <!-- end col kanan -->
+
             </div>
+            <!-- end row -->
+
         </div>
-        <!-- end contens-->
+        <!-- end container contens-->
+
     </div>
 
+    <div id="bcc"></div>
 
+    <!-- footer-->
+    <div class="footer">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>copyright &copy; 2020</p>
+                </div>
+                <div class="col-md-4">
+                    <p>design by <a href="">shinchan</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p>contact us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
 
 
 

@@ -1,33 +1,38 @@
-main {
-    display: block;
+/* .kanan,
+.kiri {
+    background-color: black;
+} */
+
+.kanan .progress {
+    background-color: transparent;
 }
 
-.navkiri {
-    height: 100%;
-    width: 200px;
-    position: fixed !important;
-    z-index: 1;
-    overflow: auto
+.txx,
+.kanan td,
+.kanan,
+.accordion h2 button,
+.accordion p {
+    color: #d8d8d8;
 }
 
-.w {
-    height: 100%;
+body {
+    background-color: #1a1a1a;
 }
 
-.-animate-left {
-    position: relative;
-    animation: animateleft 0.4s;
-    -webkit-animation: animateleft 0.4s;
+.bgx {
+    background-color: #9c7428;
 }
 
-@keyframes animateleft {
-    from {
-        left: -300px;
-        opacity: 0
-    }
+.fnx {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-    to {
-        left: 0;
-        opacity: 1
-    }
+.accordion button::after {
+    font-family: 'FontAwesome';
+    content: "\f077";
+    float: right;
+}
+
+.accordion button.collapsed::after {
+    content: "\f078";
 }
