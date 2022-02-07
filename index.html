@@ -166,21 +166,19 @@
                     </div>
                     <!-- end tab konten -->
 
+
                 </div>
                 <!-- end col tengah -->
 
                 <!-- col kanan -->
                 <div class="col-md-4 fnx kanan">
-                    <!-- jam-->
-                    <div class="text-center mt-3">
-                        <p>tempat jam</p>
-                    </div>
-                    <!-- end jam -->
-
                     <!--server status-->
                     <table class="table table-sm table-borderless">
                         <tr>
                             <p class="text-center rounded-lg bgx">server status</p>
+                        </tr>
+                        <tr>
+                            <p class="text-center"><i id="clock"></i></p>
                         </tr>
                         <tr>
                             <td>login</td>
@@ -311,8 +309,56 @@
 
 
 
+
     <script src="include/templates/js/bootstrap.bundle.js"></script>
     <script src="include/templates/js/lain.js"></script>
+
+    <script>
+        function clock() {
+            var time = new Date();
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+            var day = time.getDay();
+            var dayNames = new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu");
+
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (seconds <
+                10) {
+                seconds = "0" + seconds;
+            }
+
+            var currentTime = dayNames[day] + " " + hours + ":" + minutes + ":" + seconds;
+            document.getElementById("clock").innerHTML = currentTime;
+            setTimeout("clock()", 1000);
+
+            if (hours == "22" && minutes == "00" && seconds == "00") {
+                alert("Waktu war malam  di mulai");
+            }
+            if (hours == "24" && minutes == "00" && seconds == "00") {
+                alert("Waktu war malam  berakhir");
+            }
+            if (hours == "14" && minutes == "00" && seconds == "00") {
+                alert("Waktu war sore di mulai");
+            }
+            if (hours == "16" && minutes == "00" && seconds == "00") {
+                alert("Waktu war sore berakhir");
+            }
+            if (hours == "06" && minutes == "00" && seconds == "00") {
+                alert("Waktu war pagi di mulai");
+            }
+            if (hours == "08" && minutes == "00" && seconds == "00") {
+                alert("Waktu war pagi berakhir");
+            }
+
+        }
+        clock();
+    </script>
 </body>
 
 </html>
