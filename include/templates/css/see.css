@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .kanan,
 .kanan td {
     color: #d8d8d8;
@@ -19,6 +20,43 @@ body,
     float: right;
 }
 
+=======
+/* .kanan,
+.kiri {
+    background-color: black;
+} */
+
+.kanan .progress {
+    background-color: transparent;
+}
+
+.txx,
+.kanan td,
+.kanan,
+.accordion h2 button,
+.accordion p {
+    color: #d8d8d8;
+}
+
+body {
+    background-color: #1a1a1a;
+}
+
+.bgx {
+    background-color: #9c7428;
+}
+
+.fnx {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.accordion button::after {
+    font-family: 'FontAwesome';
+    content: "\f077";
+    float: right;
+}
+
+>>>>>>> 3109c92b78ad663eceaac83304c3e53ba4cc526c
 .accordion button.collapsed::after {
     content: "\f078";
 }
