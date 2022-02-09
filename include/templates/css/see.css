@@ -1,33 +1,24 @@
-main {
-    display: block;
+.kanan,
+.kanan td {
+    color: #d8d8d8;
 }
 
-.navkiri {
-    height: 100%;
-    width: 200px;
-    position: fixed !important;
-    z-index: 1;
-    overflow: auto
+body,
+.blk {
+    background-color: #1a1a1a;
 }
 
-.w {
-    height: 100%;
+
+.fnx {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.-animate-left {
-    position: relative;
-    animation: animateleft 0.4s;
-    -webkit-animation: animateleft 0.4s;
+.accordion button::after {
+    font-family: 'FontAwesome';
+    content: "\f077";
+    float: right;
 }
 
-@keyframes animateleft {
-    from {
-        left: -300px;
-        opacity: 0
-    }
-
-    to {
-        left: 0;
-        opacity: 1
-    }
+.accordion button.collapsed::after {
+    content: "\f078";
 }

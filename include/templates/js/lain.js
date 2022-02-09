@@ -12,23 +12,3 @@ $(document).ready(function () {
 		}
 	});
 });
-
-
-
-function _open() {
-	document.getElementById("main").style.marginLeft = "15%";
-	document.getElementById("mySidebar").style.width = "15%";
-	document.getElementById("mySidebar").style.display = "block";
-	document.getElementById("openNav").style.display = 'none';
-	// document.getElementById("coba").classList.remove("container-fluid");
-	// document.getElementById("coba").classList.add("container");
-
-}
-
-function _close() {
-	document.getElementById("main").style.marginLeft = "0%";
-	document.getElementById("mySidebar").style.display = "none";
-	document.getElementById("openNav").style.display = "inline-block";
-	// document.getElementById("coba").classList.remove("container");
-	// document.getElementById("coba").classList.add("container-fluid");
-}
